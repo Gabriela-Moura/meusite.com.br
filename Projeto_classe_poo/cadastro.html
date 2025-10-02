@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro Escolar</h1>
+    <form action="salvar.php" method="post">
+        Tipo:
+        <select name="tipo" required>
+            <option value="">Selecione</option>
+            <option value="professor">Professor</option>
+            <option value="aluno">Aluno</option>
+        </select>
+        <br><br>
+        Nome: 
+        <input type="text" name="nome" placeholder="Digite seu nome" required>
+        <br><br>
+        Email
+        <input type="email" name="email" placeholder="maria@email.com" required>
+        <br><br>
+        Disciplina (para professores): 
+        <input type="text" name="disciplina" placeholder="Digite dua disciplina">
+        <br><br>
+        Matrícula (para alunos): 
+        <input type="text" name="Matrícula">
+        <br><br>
+
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>

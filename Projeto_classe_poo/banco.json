@@ -1,0 +1,41 @@
+{
+    "professores": [
+        {
+            "nome": "Gabriela Moura",
+            "email": "gabi@email.com",
+            "disciplina": ""
+        },
+        {
+            "nome": "Gabriela Moura",
+            "email": "gabi@email.com",
+            "disciplina": ""
+        }
+    ],
+    "alunos": [
+        {
+            "nome": "Carlos",
+            "email": "carlos@email.com",
+            "matricula": ""
+        },
+        {
+            "nome": "gabi",
+            "email": "gabi@email.com",
+            "matricula": ""
+        },
+        {
+            "nome": "gabi",
+            "email": "gabi@email.com",
+            "matricula": ""
+        },
+        {
+            "nome": "gabi",
+            "email": "gabi@email.com",
+            "matricula": ""
+        },
+        {
+            "nome": "gabi",
+            "email": "gabi@email.com",
+            "matricula": ""
+        }
+    ]
+}
