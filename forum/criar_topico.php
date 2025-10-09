@@ -13,12 +13,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $novo->addChild("mensagem", $_POST['mensagem']);//adiciona uma mensagem ao tópico
     $novo->addChild("comentarios"); // adiciona um novo comentario ao tópico
     $topicos->asXML('topicos.xml');//salva os tópicos no arquivo topicos.xml
-    echo "Tópico criado com sucesso! <a href='listar.php'>Ver tópicos</a>";//Dá uma mensagem ao usuário e um link para voltar para a página de ver tópicos
+    echo "<p>Tópico criado com sucesso! <a href='listar.php'>    Ver tópicos</a></p>";//Dá uma mensagem ao usuário e um link para voltar para a página de ver tópicos
 } else {
 ?>
 <form method="post">
-    Título: <input type="text" name="titulo" required><br> <!--Título do tópico - Campo obrigatório-->
-    Mensagem: <textarea name="mensagem" required></textarea><br> <!--Mensagem do tópico - Campo obrigatório-->
+    Título: <input class="caixaForm" type="text" name="titulo" required><br> <!--Título do tópico - Campo obrigatório-->
+    Mensagem: <textarea class="caixaForm" name="mensagem" required></textarea><br> <!--Mensagem do tópico - Campo obrigatório-->
     <button type=submit>Criar tópico</button>
 </form>
 <?php } ?>

@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach($usuarios->usuario as $u) {
         if ($u->email ==$_POST['email'] && $u->senha == md5($_POST['senha'])) {
             $_SESSION['usuario'] = (string) $u->email;
-            echo "Bem vindo! <br> <a class='topicos' href='criar_topico.php'>Criar tópicos</a>";
+            echo "<p>Bem vindo! <a class='topicos' href='criar_topico.php'>  Criar tópicos</a></p>";
             exit;
         }
     }
@@ -14,8 +14,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 } else {
 ?>
 <form method="post"> <!--Formulário de login do usuario-->
-    Email: <input type="email" name="email" placeholder="maria@email.com" required><br> <!--Email do usuario - Campo obrigatório-->
-    Senha: <input type="password" name="senha" required><br><!--Senha do usuario - Campo obrigatório-->
+    Email: <input class="caixaForm" type="email" name="email" placeholder="maria@email.com" required><br> <!--Email do usuario - Campo obrigatório-->
+    Senha: <input class="caixaForm" type="password" name="senha" required><br><!--Senha do usuario - Campo obrigatório-->
     <button type="submit">Login</button>
 </form>
 <?php }?>

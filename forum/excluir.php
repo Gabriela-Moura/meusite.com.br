@@ -13,7 +13,4 @@ if ($_SESSION['usuario'] == $topicos->topico[$id]->autor) { //verifica se o auto
     $topicos->asXML('topicos.xml');//salva os tópicos no arquivo topicos.xml
 }
 header("Location: listar.php");//envia o usuário para a página listar.php
-?><?xml version="1.0" encoding="UTF-8"?>
-<topicos>
-
-<topico>
+?>

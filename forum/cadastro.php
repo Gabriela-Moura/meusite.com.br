@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $novo->addChild("email", $_POST['email']);//adiciona um email
     $novo->addChild("senha", md5($_POST['senha']));//adiciona uma senha com criptografia
     $usuarios->asXML("usuarios.xml");//salva os usuários no arquivo usuarios.xml
-    echo "<p>Usuário cadastrado com sucesso!</p> <a href'login.php'>Fazer login</a>"; //Dá uma mensagem ao usuário e um link para voltar para a página de login
+    echo "<p>Usuário cadastrado com sucesso! <br> <a class='link' href='login.php'>Fazer login</a></p>"; //Dá uma mensagem ao usuário e um link para voltar para a página de login
 } else {
 ?>
 <form method="post"> <!--Formulário de cadastro do usuario-->

@@ -4,8 +4,8 @@ session_start();
 $topicos = simplexml_load_file("topicos.xml"); //lê o aruqivo e joga dentro de topicos
 $i = 0; 
 foreach ($topicos->topico as $t) {
-    echo "<h2>".$t->titulo."</h2>"; //mostra o título do tópico
-    echo "<p>".$t->mensagem."</p>"; //mostra a mensagem do tópico
+    echo "<h2>" . $t->titulo . "</h2>"; //mostra o título do tópico
+    echo "<p>" . $t->mensagem . "</p>"; //mostra a mensagem do tópico
     echo "<small>Autor: ".$t->autor."</small><br>"; //mostra o autor do tópico
     echo "<h3>Comentários:</h3>";
     $i = 0;
@@ -19,8 +19,8 @@ foreach ($topicos->topico as $t) {
     } 
     echo "<form method='post' action='comentar.php'>
              <input type='hidden' name='id' value='$i'> 
-             Nome: <input type='text' name='nome' required><br> <!--Nome do usuário que vai comentar - Campo obrigatório-->
-             Mensagem: <input type='text' name='mensagem' required><br> <!--Mensagem do usuário que vai comentar - Campo obrigatório-->
+             Nome:  <input class='caixaForm' type='text' name='nome' required><br> <!--Nome do usuário que vai comentar - Campo obrigatório-->
+             Mensagem: <input class='caixaForm' type='text' name='mensagem' required><br> <!--Mensagem do usuário que vai comentar - Campo obrigatório-->
              <button type='submit'>Comentar</button>
           </form><hr>";
     $i++;
