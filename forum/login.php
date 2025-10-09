@@ -1,5 +1,5 @@
 <?php
-echo"<link rel='stylesheet' href='style.css'>"; //linka o arquivo de estilo
+echo"<link rel='stylesheet' href='style_teste.css'>"; //linka o arquivo de estilo
 session_start();
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $usuarios = simplexml_load_file('usuarios.xml');

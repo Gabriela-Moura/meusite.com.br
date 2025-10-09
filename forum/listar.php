@@ -1,5 +1,5 @@
 <?php
-echo"<link rel='stylesheet' href='style.css'>"; //linka o arquivo de estilo
+echo"<link rel='stylesheet' href='estilo2.css'>"; //linka o arquivo de estilo
 session_start();
 $topicos = simplexml_load_file("topicos.xml"); //lê o aruqivo e joga dentro de topicos
 $i = 0; 

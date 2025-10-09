@@ -1,5 +1,5 @@
 <?php
-echo"<link rel='stylesheet' href='style.css'>"; //linka o arquivo de estilo
+echo"<link rel='stylesheet' href='style_teste.css'>"; //linka o arquivo de estilo
 session_start();
 if(!isset($_SESSION['usuario'])) { //verifica se o usuário está logado
     echo "Você precisa estar logado.";
