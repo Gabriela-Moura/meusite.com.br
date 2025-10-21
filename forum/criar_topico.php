@@ -1,5 +1,5 @@
 <?php
-echo"<link rel='stylesheet' href='style_teste.css'>"; //linka o arquivo de estilo
+echo"<link rel='stylesheet' href='style.css'>"; //linka o arquivo de estilo
 session_start();
 if(!isset($_SESSION['usuario'])) { //verifica se o usuário está logado
     echo "Você precisa estar logado para criar um tópico.";
@@ -12,6 +12,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $novo->addChild("titulo", $_POST['titulo']);//adiciona um título ao tópico
     $novo->addChild("mensagem", $_POST['mensagem']);//adiciona uma mensagem ao tópico
     $novo->addChild("comentarios"); // adiciona um novo comentario ao tópico
+    $novo->addChild('data', date('Y-m-d H:i:s')); // adiciona data ao tópico
     $topicos->asXML('topicos.xml');//salva os tópicos no arquivo topicos.xml
     echo "<p>Tópico criado com sucesso! <a href='listar.php'>    Ver tópicos</a></p>";//Dá uma mensagem ao usuário e um link para voltar para a página de ver tópicos
 } else {

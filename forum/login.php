@@ -1,10 +1,10 @@
 <?php
-echo"<link rel='stylesheet' href='style_teste.css'>"; //linka o arquivo de estilo
+echo"<link rel='stylesheet' href='style.css'>"; //linka o arquivo de estilo
 session_start();
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $usuarios = simplexml_load_file('usuarios.xml');
-    foreach($usuarios->usuario as $u) {
-        if ($u->email ==$_POST['email'] && $u->senha == md5($_POST['senha'])) {
+    foreach ($usuarios->usuario as $u) {
+        if ($u->email == $_POST['email'] && $u->senha == md5($_POST['senha'])) {
             $_SESSION['usuario'] = (string) $u->email;
             echo "<p>Bem vindo! <a class='topicos' href='criar_topico.php'>  Criar tópicos</a></p>";
             exit;
