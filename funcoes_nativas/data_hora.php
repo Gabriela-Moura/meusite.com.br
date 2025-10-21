@@ -4,5 +4,5 @@
     echo "Data atual: " . date("d/m/Y") . "<br>";
     echo "Hora atual: " . date("H:i:s") . "<br>";
     echo "Daqui a 7 dias: " . date("d/m/Y", strtotime("+7 days"));
-    echo "<br><a href='date_natal.php' class='salvar'>Veja quantos dias falta para o Natal!!</a>";
+    echo "<br><a href='date_natal.php'>➡️Veja quantos dias falta para o Natal!!</a>";
 ?>

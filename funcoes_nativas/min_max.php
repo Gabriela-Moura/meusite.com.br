@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,4 +42,4 @@ $menor_valor =  min($a,$b,$c,$d,$e); //retorna o menor valor
 
 echo "Valores comparados: $a, $b, $c, $d e $e : <br>";
 echo "O maior valor é: $maior_valor e o menor valor é $menor_valor<br>";
-echo "<a href='round.php' class='salvar'>Ir para Round</a>";
+echo "<a href='round.php'>➡️Ir para Round</a>";
