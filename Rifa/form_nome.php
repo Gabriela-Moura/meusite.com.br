@@ -10,7 +10,7 @@
     <h2>Nome do ganhador</h2>
     <div class="caixaForm">
         <form action="lista.php" method="post">
-            <input class="resposta" type="text" name="nome"><br>
+            <input class="resposta" type="text" name="nome" required><br>
             <input class="submit" type="submit" value="Cadastrar">
     </div>
 </form>
